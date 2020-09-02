@@ -142,6 +142,12 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" Remap <esc>
+inoremap jk <esc>
+inoremap kj <esc>
+cnoremap jk <esc>
+cnoremap kj <esc>
+
 " Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
 nnoremap [r :ALEPreviousWrap<CR>
