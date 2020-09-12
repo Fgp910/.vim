@@ -58,11 +58,13 @@ augroup END
 let g:is_posix = 1
 
 " Softtabs, 4 spaces
-set tabstop=4
 set shiftwidth=4
+set tabstop=4
 set softtabstop=4
 set shiftround
 set expandtab
+set autoindent
+set smartindent
 
 " Display extra whitespace
 set list listchars=tab:»·,trail:·,nbsp:·
@@ -147,6 +149,17 @@ inoremap jk <esc>
 inoremap kj <esc>
 cnoremap jk <esc>
 cnoremap kj <esc>
+
+" Automatic closing brackets
+inoremap " ""<left>
+inoremap ' ''<left>
+inoremap ( ()<left>
+inoremap [ []<left>
+inoremap { {}<left>
+inoremap {<CR> {<CR>}<C-o>O
+inoremap <expr> ) strpart(getline('.'), col('.')-1, 1) == ")" ? "\<Right>" : ")"
+inoremap <expr> ] strpart(getline('.'), col('.')-1, 1) == "]" ? "\<Right>" : "]"
+inoremap <expr> } strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
 " Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
