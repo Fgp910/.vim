@@ -182,3 +182,7 @@ set diffopt+=vertical
 if filereadable($HOME . "/.vimrc.local")
   source ~/.vimrc.local
 endif
+
+" Color scheme
+colorscheme gruvbox
+set background=dark
