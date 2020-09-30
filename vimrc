@@ -144,6 +144,9 @@ nnoremap <C-k> <C-w>k
 nnoremap <C-h> <C-w>h
 nnoremap <C-l> <C-w>l
 
+" Remap visual block (conflict with <C-v> = paste on Windows)
+noremap <Leader>v <C-v>
+
 " Remap <esc>
 inoremap jk <esc>
 inoremap kj <esc>
