@@ -189,3 +189,8 @@ endif
 " Color scheme
 colorscheme gruvbox
 set background=dark
+
+" Defines cursor shape and cursorline for Insert and Normal mode
+autocmd InsertEnter,InsertLeave * set cul!
+let &t_SI = "\e[6 q"
+let &t_EI = "\e[2 q"
