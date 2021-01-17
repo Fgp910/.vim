@@ -197,4 +197,4 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 " LaTeX
-autocmd FileType tex setlocal formatoptions+=t
+autocmd FileType tex setlocal formatoptions+=t, bg=light
