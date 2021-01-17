@@ -1,3 +1,6 @@
 [submodule "pack/colors/start/gruvbox"]
 	path = pack/colors/start/gruvbox
 	url = https://github.com/morhetz/gruvbox.git
+[submodule "pack/latex/start/vimtex"]
+	path = pack/latex/start/vimtex
+	url = https://github.com/lervag/vimtex
