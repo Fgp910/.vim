@@ -15,6 +15,7 @@ set laststatus=2  " Always display the status line
 set autowrite     " Automatically :write before running commands
 set modelines=0   " Disable modelines as a security precaution
 set nomodeline
+set scrolloff=8   " Shifts screen at 8 lines from the edge
 
 " Switch syntax highlighting on, when the terminal has colors
 " Also switch on highlighting the last used search pattern.
@@ -197,4 +198,8 @@ let &t_SI = "\e[6 q"
 let &t_EI = "\e[2 q"
 
 " LaTeX
-autocmd FileType tex setlocal formatoptions+=t, bg=light
+autocmd FileType tex call SetTexOptions()
+function SetTexOptions()
+    setlocal formatoptions+=t
+    :VimtexCompile
+endfunction
