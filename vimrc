@@ -156,8 +156,6 @@ cnoremap jk <esc>
 cnoremap kj <esc>
 
 " Automatic closing brackets
-inoremap " ""<left>
-inoremap ' ''<left>
 inoremap ( ()<left>
 inoremap [ []<left>
 inoremap { {}<left>
@@ -168,6 +166,9 @@ inoremap <expr> } strpart(getline('.'), col('.')-1, 1) == "}" ? "\<Right>" : "}"
 
 " Reselect pasted text
 nnoremap gp `[v`]
+
+" Make Y behave as C or D
+nnoremap Y y$
 
 " Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
