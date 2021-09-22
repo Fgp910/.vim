@@ -207,3 +207,6 @@ function SetTexOptions()
     setlocal formatoptions+=t
     :VimtexCompile
 endfunction
+
+" HTML
+autocmd FileType html setlocal shiftwidth=2 tabstop=2
