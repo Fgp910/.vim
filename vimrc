@@ -87,8 +87,8 @@ if executable('ag')
   endif
 endif
 
-" Make it obvious where 80 characters is
-set textwidth=80
+" Make it obvious where 79 (PEP8) characters is
+set textwidth=79
 set colorcolumn=+1
 set formatoptions-=t "Doesn't break long lines"
 
@@ -209,4 +209,4 @@ function SetTexOptions()
 endfunction
 
 " HTML
-autocmd FileType html setlocal shiftwidth=2 tabstop=2
+autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
