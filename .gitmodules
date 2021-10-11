@@ -5,5 +5,5 @@
 	path = pack/latex/start/vimtex
 	url = https://github.com/lervag/vimtex
 [submodule "pack/tpope/start/pack/tpope/start/fugitive"]
-	path = pack/tpope/start/pack/tpope/start/fugitive
+	path = pack/tpope/start/fugitive
 	url = https://tpope.io/vim/fugitive.git
