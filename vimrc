@@ -209,4 +209,4 @@ function SetTexOptions()
 endfunction
 
 " HTML
-autocmd BufRead,BufNewFile *.htm,*.html setlocal tabstop=2 shiftwidth=2 softtabstop=2
+autocmd BufRead,BufNewFile *.htm,*.html,*.json setlocal tabstop=2 shiftwidth=2 softtabstop=2
