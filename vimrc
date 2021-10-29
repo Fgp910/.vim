@@ -115,10 +115,10 @@ inoremap <S-Tab> <C-n>
 nnoremap <Leader><Leader> <C-^>
 
 " Get off my lawn
-nnoremap <Left>  :echoe "Use h"<CR>
-nnoremap <Right> :echoe "Use l"<CR>
-nnoremap <Up>    :echoe "Use k"<CR>
-nnoremap <Down>  :echoe "Use j"<CR>
+"nnoremap <Left>  :echoe "Use h"<CR>
+"nnoremap <Right> :echoe "Use l"<CR>
+"nnoremap <Up>    :echoe "Use k"<CR>
+"nnoremap <Down>  :echoe "Use j"<CR>
 
 " vim-test mappings
 nnoremap <silent> <Leader>t  :TestFile<CR>
@@ -169,6 +169,9 @@ nnoremap gp `[v`]
 
 " Make Y behave as C or D
 nnoremap Y y$
+
+" Allow mouse scroll on normal mode
+set mouse=n
 
 " Move between linting errors
 nnoremap ]r :ALENextWrap<CR>
